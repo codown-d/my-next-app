@@ -1,0 +1,40 @@
+/* components/MainLayout.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .navList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navList li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  .navList a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
