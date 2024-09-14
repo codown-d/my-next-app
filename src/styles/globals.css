@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('/styles/fonts.css'); /* 确保路径正确 */
 :root {
   --background: #ffffff;
   --foreground: #171717;
