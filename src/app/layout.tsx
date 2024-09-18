@@ -1,7 +1,10 @@
 import React from "react";
 import { Metadata } from "next";
 import MainLayout from "@/components/layout/MainLayout";
-import '@/styles/globals.css'
+import { AntdRegistry } from "@ant-design/nextjs-registry";
+import { ConfigProvider } from "antd";
+import theme from "@/theme/themeConfig";
+import "@/styles/globals.css";
 
 // 设置页面的元数据
 export const metadata: Metadata = {
@@ -14,7 +17,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body>
-        <MainLayout>{children}</MainLayout>
+        <AntdRegistry>
+          <ConfigProvider theme={theme}>
+            <MainLayout>{children}</MainLayout>
+          </ConfigProvider>
+        </AntdRegistry>
       </body>
     </html>
   );
