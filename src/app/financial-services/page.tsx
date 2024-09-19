@@ -1,3 +1,4 @@
+import Banner from "@/components/ui/Banner";
 import { Metadata } from "next";
 import Image from "next/image";
 export const metadata: Metadata = {
@@ -6,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function () {
-  return <div className="financial-services"></div>;
+  return (
+    <div className="financial-services">
+      <Banner></Banner>
+    </div>
+  );
 }

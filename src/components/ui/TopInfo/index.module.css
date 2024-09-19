@@ -1,0 +1,8 @@
+.top-info-select .ant-select-selector {
+  background: #f00;
+  @apply bg-white border-gray-300 rounded-lg px-4 py-2; /* 使用 Tailwind 的 @apply */
+}
+
+.ant-select-arrow {
+  @apply text-blue-500;
+}

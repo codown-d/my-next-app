@@ -24,6 +24,7 @@
     "concurrently": "^9.0.1",
     "cross-env": "^7.0.3",
     "postcss": "^8",
+    "sass": "^1.79.1",
     "tailwindcss": "^3.4.11",
     "ts-node": "^10.9.2",
     "tslib": "^2.7.0",
