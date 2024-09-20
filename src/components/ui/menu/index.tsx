@@ -47,7 +47,7 @@ export default function TzMenuUi() {
       }}
     >
       <Menu
-        selectedKeys={[currentPath]}
+        selectedKeys={["/guarantee-services"]}
         mode="horizontal"
         items={items}
         onChange={() => {}}

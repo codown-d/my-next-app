@@ -2,6 +2,7 @@
 import { Button, Select } from "antd";
 import React from "react";
 import styles from "./index.module.css";
+import Lace from "../Lace";
 export default function () {
   let infoList = [
     ...new Array(10).fill(1).map((item, index) => {
@@ -20,17 +21,16 @@ export default function () {
       />
       <div className="flex  justify-center">
         <div className="flex flex-wrap gap-10 p-10 py-5 max-w-6xl bg-white rounded-[20px] shadow shadow-blue-[rgb(144 164 174)]/50">
-        {infoList.map((item) => {
-          return (
-            <div className="flex justify-center items-center flex-col ">
-              <img src={item.url} alt="" className="w-[40px]"/>
-              <span className="my-2 ">{item.label}</span>
-            </div>
-          );
-        })}
+          {infoList.map((item) => {
+            return (
+              <div className="flex justify-center items-center flex-col ">
+                <img src={item.url} alt="" className="w-[40px]" />
+                <span className="my-2 ">{item.label}</span>
+              </div>
+            );
+          })}
+        </div>
       </div>
-      </div>
-      
     </div>
   );
 }
