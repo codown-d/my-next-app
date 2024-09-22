@@ -2,13 +2,13 @@
 import { Avatar, Card } from "antd";
 import React from "react";
 import Meta from "antd/es/card/Meta";
-interface InfoCardProps {
+interface CardInfo {
   imgUrl: any;
   avatar: any;
   title: any;
   description: any;
 }
-export default function (props: InfoCardProps) {
+export default function (props: CardInfo) {
   let { imgUrl, avatar, title, description } = props;
   return (
     <Card

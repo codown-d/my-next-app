@@ -12,7 +12,7 @@ const MainLayout: React.FC<{
     <>
       <GlobalProvider>
         <div className={`${styles.container} bg-slate-100`}>
-          {/* <Header /> */}
+          <Header />
           <main className={`${styles.main} pt-14 w-full`}>{children}</main>
           <Footer />
         </div>

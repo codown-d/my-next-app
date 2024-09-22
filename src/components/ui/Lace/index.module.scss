@@ -1,12 +1,6 @@
-.elementor-shape {
-    z-index: 2;
-    pointer-events: none;
-
-
+.shape{
+  transform: rotate(180deg);
 }
-
-.elementor-shape-fill {
-    fill: #fff;
-    transform-origin: center;
-    transform: rotateY(0deg);
+.shape-fill{
+fill: rgb(241,245,249);
 }

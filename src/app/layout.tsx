@@ -18,7 +18,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en">
       <body>
         <AntdRegistry>
-          <ConfigProvider theme={theme}>
+          <ConfigProvider theme={theme} button={{autoInsertSpace:false}}>
             <MainLayout>{children}</MainLayout>
           </ConfigProvider>
         </AntdRegistry>
